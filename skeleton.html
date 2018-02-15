@@ -1,35 +1,62 @@
-general_assembly_logo.png
+<!DOCTYPE html>
+<html>
 
-General Assembly Account Creation
+  <head>
+    <title>General Assembly Account Creation</title>
+  </head>
+  <body>
 
-Welcome to the General Assembly. General Assembly is a global
-institution training people all over the world in today's top
-technologies.
+    <img src="./general_assembly_logo.png" alt="General Assembly Logo">
 
-Please fill out the information below to create your General Assembly
-account. Let us know what city you're in and what course
-you're taking. This list is for all students. Please tell us what
-city you're in and whether you're taking the Immersive User Experience (UX)
-course or the Immersive Web Development course. 
+    <h1>General Assembly Account Creation</h1>
 
-City:
-  Hong Kong
-  London
-  Los Angeles
-  New York
-  Portland
-  San Francisco
-  Seattle
-  Singapore
+    <div>
+      <p>Welcome to the General Assembly. General Assembly is a global
+        institution training people all over the world in today's top
+        technologies.
+      </p>
 
-Course:
-  (0) UX
-  ( ) Web Dev
+      <p>
+        Please fill out the information below to create your General Assembly
+        account. Let us know what city you're in and what course
+        you're taking. This list is for all students. Please tell us what
+        city you're in and whether you're taking the Immersive Web Development
+        course or self study.
+      </p>
+    </div>
 
-Name:     _________
-Email:    _________
-Password: *********
-
-[] Yes, subscribe me to the General Assembly student newsletter
-
-[Subscribe]
+    <form action="success.html" method="get">
+      <label>City</label>
+      <select id="select-city">
+        <option value="Hong Kong">Hong Kong</option>
+        <option value="London">London</option>
+        <option value="Los Angeles">Los Angeles</option>
+        <option value="New York">New York</option>
+        <option value="Portland">Portland</option>
+        <option value="San Francisco">San Francisco</option>
+        <option value="Seattle" >Seattle</option>
+        <option value="Singapore">Singapore</option>
+        <option value="Cheyenne" selected>Cheyenne</option>
+      </select>
+      <br>
+      <label>Course Style</label>
+      <label> <input type="radio" value="WDI" checked>WDI</label>
+      <label> <input type="radio" value="self-study">Self-Study</label>
+      <br>
+      <label for="name-field">Name</label>
+      <input type="text" id="name-field" placeholder="name" required>
+      <br>
+      <label for="email-field">Email</label>
+      <input type="email" id="email-field" placeholder="email" required>
+      <br>
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="password" required>
+      <br>
+      <label for="subscribe">
+        <input type="checkbox" id="subscribe" checked>Yes, subscribe me to the GA student Newsletter
+      </label>
+      <br>
+      <input type="submit" value="Subscribe">
+    </form>
+  </body>
+</html>
